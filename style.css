@@ -35,9 +35,6 @@ body {
   padding: 1em;
 }
 
-.superior .botones {
-}
-
 .wrapper .carousel {
   display: grid;
   grid-auto-flow: column;
