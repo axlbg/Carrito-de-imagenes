@@ -41,8 +41,9 @@ body {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: calc((100% / 3));
-  gap: 16px;
+  gap: 1em;
   overflow: hidden;
+  padding: 1em;
 }
 
 .carousel.dragging .item {
@@ -51,13 +52,14 @@ body {
 }
 
 .carousel .item {
-  height: 342px;
+  height: 250px;
   border-radius: 8px;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  background-color: aquamarine;
 }
 
 .item .img img {
