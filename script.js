@@ -1,7 +1,15 @@
 const carousel = document.querySelector(".carousel");
+const arrowBtns = document.querySelectorAll(".wrapper button");
+const firstItemWidth = carousel.querySelector(".item").offsetWidth;
 
 let isDragging = false;
 let startX, startScrollLeft;
+
+arrowBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    carousel.scrollLeft += btn.id === "izq" ? -firstItemWidth : firstItemWidth;
+  });
+});
 
 const dragStart = (e) => {
   isDragging = true;
