@@ -45,6 +45,11 @@ body {
   overflow: hidden;
 }
 
+.carousel.dragging .item {
+  cursor: grab;
+  user-select: none;
+}
+
 .carousel .item {
   height: 342px;
   border-radius: 8px;
